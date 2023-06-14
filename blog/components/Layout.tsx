@@ -10,8 +10,8 @@ type LayoutComponentProps = {
   home?: boolean;
 };
 
-const name = 'Young Hyun';
-export const siteTitle = 'Younghyun blog';
+const name = 'YoungHyun Kim';
+export const siteTitle = `Young's blog`;
 
 export default function Layout({ children, home }: LayoutComponentProps) {
   return (
@@ -34,27 +34,27 @@ export default function Layout({ children, home }: LayoutComponentProps) {
       <header className={styles.header}>
         {home ? (
           <>
-            <Image
-              priority
-              src="/images/profile.jpeg"
-              className={utilStyles.borderCircle}
-              height={220}
-              width={144}
-              alt=""
-            />
+              <Image
+                  priority
+                  src="/images/profile.jpeg"
+                  className={utilStyles.borderCircle}
+                  height={144}
+                  width={144}
+                  alt={name}
+              />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
           <>
             <Link href="/">
-              <Image
-                priority
-                src="/images/profile.jpeg"
-                className={utilStyles.borderCircle}
-                height={108}
-                width={108}
-                alt=""
-              />
+                <Image
+                    priority
+                    src="/images/profile.jpg"
+                    className={utilStyles.borderCircle}
+                    height={108}
+                    width={108}
+                    alt={name}
+                />
             </Link>
             <h2 className={utilStyles.headingLg}>
               <Link href="/" className={utilStyles.colorInherit}>

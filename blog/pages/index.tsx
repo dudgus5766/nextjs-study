@@ -29,8 +29,10 @@ export default function Home({ allPostsData }: AllPostsDataProps) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>I love coding....💻</p>
-        <p>I'm App developer.</p>
+        <p>Hi there! 👋</p>
+        <p>I'm a Frontend developer skilled in APP and WEB. <br />
+            I develop cross-platforms mobile app, ReactNative.
+        </p>
       </section>
       {/* Add this <section> tag below the existing <section> tag */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
